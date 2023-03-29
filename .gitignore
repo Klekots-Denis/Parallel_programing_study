@@ -8,3 +8,7 @@
 !*.cc
 !*.c
 !*.C
+
+# do not ignore .txt files and .md files
+!*.txt
+!*.md
