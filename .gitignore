@@ -1,4 +1,5 @@
 # ignore every thing
+*
 
 # do not ignore fortran 77 code file
 !*.f
