@@ -1,0 +1,44 @@
+send
+ The sending time is    2.1943300000000000E-007
+ The receiving time is    3.3570799999993460E-007
+
+bsend
+ The sending time is    2.5783000000000003E-007
+ The receiving time is    3.5201500000003882E-007
+
+ssend
+ The receiving time is    1.1918760000000362E-006
+ The sending time is    1.2042089999999999E-006
+
+rsend
+ The sending time is    2.3509000000000000E-007
+ The receiving time is    3.6847600000000648E-007
+
+
+=====================================================
+
+in case of unsing chatting with blocking
+ The result after all is equal to    2.50281574E+09
+ The time is    8.3153083000000003E-002
+
+in case of using asynchronus messaging
+ The result after all is equal to    2.50281574E+09
+ The time is    3.0184375999999999E-002 
+
+
+
+
+=======================================
+without using delayed operations
+ The time is    2.33655684E-02
+
+using delayed operations
+ The time is    2.39709709E-02
+
+
+=======================================
+with the blocking operations
+ The time is    2.46001710E-03
+with doubledirectional operations
+ The time is    2.16842908E-03
+ 

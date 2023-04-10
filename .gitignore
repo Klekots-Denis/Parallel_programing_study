@@ -1,15 +1,3 @@
 # ignore every thing
-*
-
-# do not ignore fortran 77 code file
-!**.f
-
-# do not ignore c++ and c code files
-!**.cpp
-!**.cc
-!**.c
-!**.C
-
-# do not ignore .txt files and .md files
-!**.txt
-!**.md
+.vscode
+*.out
