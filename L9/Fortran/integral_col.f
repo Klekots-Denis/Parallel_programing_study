@@ -52,16 +52,13 @@
         call MPI_REDUCE(sum, gsum, 1, MPI_DOUBLE_PRECISION, MPI_SUM, 0,
      &                  MPI_COMM_WORLD, ierr)
 
-        time = MPI_WTIME(ierr) - time
-
-        call MPI_REDUCE(time, gtime, 1, MPI_DOUBLE_PRECISION, MPI_SUM, 
-     &                  0, MPI_COMM_WORLD, ierr)  
-
         if (rank .eq. 0) then
 
           print*, "The result is ", gsum
 
-          print*, "The processor time is ", gtime
+          time = MPI_WTIME(ierr) - time
+
+          print*, "The calculation time is ", time
 
         endif
 

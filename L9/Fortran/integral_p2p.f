@@ -5,7 +5,7 @@
         integer ierr, rank, size, divn, i
 
         double precision a, b, a1, b1, b2, sum, gsum, dx, x, F
-        double precision fx, fxp, time, gtime
+        double precision fx, fxp, time
         parameter (a = 0, b = 1)
 
         F(x) = 1 + x
@@ -63,16 +63,9 @@
 
           print*, "The result is ", gsum
 
-        endif
+          time = MPI_WTIME(ierr) - time 
 
-        time = MPI_WTIME(ierr) - time
-
-        call MPI_REDUCE(time, gtime, 1, MPI_DOUBLE_PRECISION, MPI_SUM, 
-     &                  0, MPI_COMM_WORLD, ierr)  
-
-        if (rank .eq. 0) then
-
-          print*, "The processor time is ", gtime
+          print*, "The calculation time is ", time
 
         endif
 
