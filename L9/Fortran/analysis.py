@@ -2,7 +2,8 @@ import os
 import termplotlib as tpl
 
 
-divN = 840000
+# divN = 840000
+divN = 1000000
 
 divNFile = open("numOfdivisions.txt", "w")
 divNFile.write(str(divN))
@@ -27,6 +28,8 @@ for procNum in range(1,9):
         os.system(commandStr)
         line = ""
         fileIn = open("outfile.txt")
+        line = fileIn.readline()
+        line = fileIn.readline()
         line = fileIn.readline()
         line = fileIn.readline()
         line = fileIn.readline()
@@ -70,6 +73,8 @@ for procNum in range(1,9):
         os.system(commandStr)
         line = ""
         fileIn = open("outfile.txt")
+        line = fileIn.readline()
+        line = fileIn.readline()
         line = fileIn.readline()
         line = fileIn.readline()
         line = fileIn.readline()

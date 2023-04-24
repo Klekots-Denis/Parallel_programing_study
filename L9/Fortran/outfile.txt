@@ -1,5 +1,7 @@
  Please enter the number of divisions 
- The result is    1.5000000000008984     
- The calculation time is    1.1612949999999999E-003
-0.21user 0.16system 0:00.34elapsed 110%CPU (0avgtext+0avgdata 20956maxresident)k
-0inputs+16504outputs (2225major+13201minor)pagefaults 0swaps
+ The result is    1.6026115290398031     
+ The precise value is   1.6026115417480469     
+ The error is    1.2708243790626739E-008
+ The calculation time is    6.1111960000000002E-003
+0.22user 0.20system 0:00.37elapsed 115%CPU (0avgtext+0avgdata 21172maxresident)k
+0inputs+16504outputs (2249major+13247minor)pagefaults 0swaps

@@ -1,5 +1,7 @@
 Please enter the number of divisions 
-The result is 1.5
-The calculation time is 0.00159257
-0.21user 0.17system 0:00.35elapsed 110%CPU (0avgtext+0avgdata 21076maxresident)k
-0inputs+16504outputs (2227major+13405minor)pagefaults 0swaps
+The result is 1.60261
+The precise value is 1.60261
+The error is 6.49602e-08
+The calculation time is 0.00747535
+0.23user 0.18system 0:00.36elapsed 116%CPU (0avgtext+0avgdata 21212maxresident)k
+0inputs+16504outputs (2233major+13390minor)pagefaults 0swaps

@@ -6,9 +6,11 @@
 
         double precision a, b, a1, b1, b2, sum, gsum, dx, x, F
         double precision fx, fxp, time
-        parameter (a = 0, b = 1)
+        parameter (a = -2, b = 0)
+        double precision prsum
+        parameter (prsum = 1.6026115940)
 
-        F(x) = 1 + x
+        F(x) = (x*x+5*x+6)*cos(2*x)
 
         call MPI_INIT(ierr)
 
@@ -62,6 +64,8 @@
           enddo
 
           print*, "The result is ", gsum
+          print*, "The precise value is", prsum
+          print*, "The error is ", prsum - gsum
 
           time = MPI_WTIME(ierr) - time 
 

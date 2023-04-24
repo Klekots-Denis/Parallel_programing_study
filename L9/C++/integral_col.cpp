@@ -6,13 +6,15 @@ using namespace std;
 
 double F(double x)
 {
-    return 1+x;
+    return (x*x+5*x+6)*cos(2*x);
 }
 
 int main(int argc, char **argv)
 {
-    const double a = 0;
-    const double b = 1;
+    const double a = -2;
+    const double b = 0;
+
+    const double prsum = 1.6026115940;
 
     int rank;
     int size;
@@ -65,6 +67,8 @@ int main(int argc, char **argv)
     if (rank == 0)
     {
         cout << "The result is " << gsum << endl;
+        cout << "The precise value is " << prsum << endl;
+        cout << "The error is " << prsum - gsum << endl;
 
         time = MPI_Wtime() - time;
 
