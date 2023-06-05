@@ -17,12 +17,12 @@ xPlotArguments = [i for i in range(1,9)]
 for threadsN in range(1,9):
 
     time2mean = []
-    for i in range(50):
+    for i in range(100):
         outStr = os.popen(f"./gcc.out {threadsN} {matrDimension}").read()
         calcTime = float(outStr.split()[-1])
         time2mean.append(calcTime)
 
-    calcTimes.append(sum(time2mean)/50)
+    calcTimes.append(sum(time2mean)/100)
 
 
 
